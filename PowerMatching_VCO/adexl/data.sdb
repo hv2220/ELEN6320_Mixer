@@ -1,0 +1,1089 @@
+<?xml version="1.0"?>
+<setupdb version="6">data
+	<active>Active Setup
+		<corners>
+			<corner enabled="1">_default</corner>
+		</corners>
+		<extensions>
+			<extension>Parasitics
+				<callback>_parSetupDBExtensionCB</callback>
+				<iconvalue></iconvalue>
+				<icontype></icontype>
+			</extension>
+		</extensions>
+		<currentmode>Single Run, Sweeps and Corners</currentmode>
+		<overwritehistory>0</overwritehistory>
+		<tests>
+			<test enabled="1">PSS
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>PowerMatching_VCO</value>
+					</option>
+					<option>lib
+						<value>ELEN6320_FINALPROJECT</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>PSS_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>PowerMatching_VCO</value>
+					</option>
+					<option>lib
+						<value>ELEN6320_FINALPROJECT</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>pss</value>
+					</option>
+				</origoptions>
+			</test>
+			<test>HB
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>PowerMatching_VCO</value>
+					</option>
+					<option>lib
+						<value>ELEN6320_FINALPROJECT</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>HB_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>PowerMatching_VCO</value>
+					</option>
+					<option>lib
+						<value>ELEN6320_FINALPROJECT</value>
+					</option>
+					<option>sim
+						<value>spectre</value>
+					</option>
+					<option>view
+						<value>schematic</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>hb</value>
+					</option>
+				</origoptions>
+			</test>
+		</tests>
+		<vars>
+			<var>numfin1
+				<value>5</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>mult
+				<value>8</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VGS
+				<value>0.7</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VG2
+				<value>800m</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VG1
+				<value>0.6</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VDS
+				<value>1.2</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>VB
+				<value>800m</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Ldrain
+				<value>120p</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Lbuffer
+				<value>375p</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Cc
+				<value>15f</value>
+				<dependentTests>
+					<dependentTest enabled="1">PSS</dependentTest>
+					<dependentTest enabled="1">HB</dependentTest>
+				</dependentTests>
+			</var>
+			<var>Lgate
+				<value>50p</value>
+				<dependentTests>
+					<dependentTest omitted="0">HB</dependentTest>
+				</dependentTests>
+			</var>
+		</vars>
+		<overwritehistoryname>Interactive.0</overwritehistoryname>
+		<plottingoptions>
+			<plottingoption>plottingmode
+				<value>Replace</value>
+			</plottingoption>
+			<plottingoption>plottype
+				<value>None</value>
+			</plottingoption>
+			<plottingoption>usewaveformtemplate
+				<value>no</value>
+			</plottingoption>
+			<plottingoption>useMaestroPlottingTemplate
+				<value>yes</value>
+			</plottingoption>
+			<plottingoption>waveformtemplate
+				<value></value>
+			</plottingoption>
+			<plottingoption>allplottingtemplates
+				<value></value>
+			</plottingoption>
+			<plottingoption>defaultplottingtemplate
+				<value></value>
+			</plottingoption>
+		</plottingoptions>
+		<disabledtests>
+			<test>PSS</test>
+		</disabledtests>
+	</active>
+	<history>History
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.0
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test>PSS
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>PSS_pss_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>pss</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>HB
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>HB_hb_Interactive.0</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>hb</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>numfin1
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>mult
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VG2
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VG1
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ldrain
+						<value>120p</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lbuffer
+						<value>375p</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Cc
+						<value>15f</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Jun 27 17:01:42 2021</timestamp>
+			<resultsname>/homes/user/stud/fall20/phn2105/Cadence/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.0.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.0.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/remote01_phn2105_170142185</localpsfdir>
+			<psfdir>/homes/user/stud/fall20/phn2105/simulation/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.0</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.0</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/homes/user/stud/fall20/phn2105/Cadence/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.0.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.0.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.1
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">PSS
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>PSS_pss_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>pss</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>HB
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>HB_hb_Interactive.1</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>hb</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>numfin1
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>mult
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VG2
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VG1
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ldrain
+						<value>120p</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lbuffer
+						<value>375p</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Cc
+						<value>15f</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>PSS</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Jun 27 17:02:59 2021</timestamp>
+			<resultsname>/homes/user/stud/fall20/phn2105/Cadence/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.1.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.1.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/remote01_phn2105_170259837</localpsfdir>
+			<psfdir>/homes/user/stud/fall20/phn2105/simulation/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.1</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.1</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/homes/user/stud/fall20/phn2105/Cadence/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.1.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.1.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">PSS
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>PSS_pss_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>pss</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>HB
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>HB_hb_Interactive.2</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>hb</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>numfin1
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>mult
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VG2
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VG1
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ldrain
+						<value>120p</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lbuffer
+						<value>375p</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Cc
+						<value>15f</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>PSS</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Jun 27 17:03:45 2021</timestamp>
+			<resultsname>/homes/user/stud/fall20/phn2105/Cadence/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.2.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/remote01_phn2105_170345784</localpsfdir>
+			<psfdir>/homes/user/stud/fall20/phn2105/simulation/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.2</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.2</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/homes/user/stud/fall20/phn2105/Cadence/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.2.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">PSS
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>PSS_pss_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>pss</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>HB
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>HB_hb_Interactive.3</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>PowerMatching_VCO</value>
+							</option>
+							<option>lib
+								<value>ELEN6320_FINALPROJECT</value>
+							</option>
+							<option>sim
+								<value>spectre</value>
+							</option>
+							<option>view
+								<value>schematic</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>hb</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<vars>
+					<var>numfin1
+						<value>5</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>mult
+						<value>8</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VGS
+						<value>0.7</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VG2
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VG1
+						<value>0.6</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VDS
+						<value>1.2</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>VB
+						<value>800m</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Ldrain
+						<value>120p</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Lbuffer
+						<value>375p</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+					<var>Cc
+						<value>15f</value>
+						<dependentTests>
+							<dependentTest enabled="1">PSS</dependentTest>
+							<dependentTest enabled="1">HB</dependentTest>
+						</dependentTests>
+					</var>
+				</vars>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>Replace</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>PSS</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Jun 27 17:05:38 2021</timestamp>
+			<resultsname>/homes/user/stud/fall20/phn2105/Cadence/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.3.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/remote01_phn2105_170539007</localpsfdir>
+			<psfdir>/homes/user/stud/fall20/phn2105/simulation/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.3</psfdir>
+			<simdir>$AXL_PROJECT_DIR/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.3</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/homes/user/stud/fall20/phn2105/Cadence/ELEN6320_FINALPROJECT/PowerMatching_VCO/adexl/results/data/Interactive.3.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+	</history>
+</setupdb>

@@ -1,0 +1,849 @@
+_outputList = nil
+ _envSaveOptions = nil
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->definedIn = ""
+tmp1->name = "p(50. /vout+); pss dB10P"
+tmp1->expression = (let
+(tmp1 tmp2)
+tmp1 = 'dBm
+tmp2 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5)
+tmp1 = 'pvr
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'pss
+list(tmp1 tmp2)
+)
+tmp3 = "/vout+"
+tmp4 = 0
+tmp5 = 5.0000000000000000e+01
+list(tmp1 tmp2 tmp3 tmp4 tmp5)
+)
+list(tmp1 tmp2)
+)
+tmp1->signal = nil
+tmp1->scriptFile = ""
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = 't
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = nil
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = 't
+tmp1->save = nil
+tmp1->march = nil
+tmp1->index = 1
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->definedIn = ""
+tmp1->name = "harm=1 freq; pss (Hz)"
+tmp1->expression = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'harmonic
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'xval
+tmp2 = (let
+(tmp1 tmp2 tmp3 tmp4)
+tmp1 = 'getData
+tmp2 = "vout+"
+tmp3 = '?result
+tmp4 = "pss_fd"
+list(tmp1 tmp2 tmp3 tmp4)
+)
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 1
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp1->signal = nil
+tmp1->scriptFile = ""
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = 't
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = nil
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = nil
+tmp1->save = nil
+tmp1->march = nil
+tmp1->index = 2
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "harm=2 freq; pss (Hz)"
+tmp1->expression = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'harmonic
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'xval
+tmp2 = (let
+(tmp1 tmp2 tmp3 tmp4)
+tmp1 = 'getData
+tmp2 = "vout+"
+tmp3 = '?result
+tmp4 = "pss_fd"
+list(tmp1 tmp2 tmp3 tmp4)
+)
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 2
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp1->signal = nil
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = nil
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = nil
+tmp1->save = nil
+tmp1->march = nil
+tmp1->index = 3
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "v /vout- h=1; pss mag(Vpeak)"
+tmp1->expression = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'harmonicVsOwnFreq
+tmp2 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = 'vh
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'pss
+list(tmp1 tmp2)
+)
+tmp3 = "/vout-"
+list(tmp1 tmp2 tmp3)
+)
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = (let
+(tmp1)
+tmp1 = 1
+list(tmp1)
+)
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3)
+)
+tmp1->signal = nil
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = nil
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = nil
+tmp1->save = nil
+tmp1->march = nil
+tmp1->index = 4
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = "peak"
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "Phase Noise; dBc/Hz, Relative Harmonic = 1"
+tmp1->expression = (let
+(tmp1 tmp2)
+tmp1 = 'pn
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'quote
+tmp2 = 'pnoise
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2)
+)
+tmp1->signal = nil
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = nil
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = 't
+tmp1->save = nil
+tmp1->march = nil
+tmp1->index = 5
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = "Phase Noise"
+tmp1->label = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11)
+tmp1 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.8857210679235118e+02
+tmp2 = -9.9837860848842453e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(1.00e+00 9.886e+02 -9.98e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp2 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.8032312936511380e+02
+tmp2 = -9.9900485812071992e+01
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(9.20e-01 9.803e+02 -9.99e+01)"
+list(tmp1 tmp2 tmp3)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.7135712617529020e+02
+tmp2 = -1.0001446087028793e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(8.40e-01 9.714e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 9.6313301939627331e+02
+tmp2 = -1.0007000632443003e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(7.60e-01 9.631e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 5.4190046196995866e+02
+tmp2 = -1.0018506632276399e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(6.80e-01 5.419e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+tmp6 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 5.3704201684559007e+02
+tmp2 = -1.0025547340204116e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(6.00e-01 5.370e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+tmp7 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 5.3249673187676592e+02
+tmp2 = -1.0028302645125248e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(5.20e-01 5.325e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+tmp8 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 5.2798841324592695e+02
+tmp2 = -1.0030961289255433e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(4.40e-01 5.280e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+tmp9 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 5.2380607049677667e+02
+tmp2 = -1.0031987974478781e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(3.60e-01 5.238e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+tmp10 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 5.2004515966763108e+02
+tmp2 = -1.0033150609483739e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(2.80e-01 5.200e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+tmp11 = (let
+(tmp1 tmp2 tmp3)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 5.1677688060219725e+02
+tmp2 = -1.0035979834095312e+02
+list(tmp1 tmp2)
+)
+tmp2 = "(VB:CorFreq:PN-3dB)"
+tmp3 = "list(2.00e-01 5.168e+02 -1.00e+02)"
+list(tmp1 tmp2 tmp3)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11)
+)
+tmp1->yaxisUnit = "dBc/Hz"
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+savedComponent = (let
+(tmp1)
+(unless tmp1
+tmp1 = make_sevOutputStruct()
+)
+(unless tmp1
+tmp1 = (ncons nil)
+)
+tmp1->name = "(VB:CorFreq:PN-3dB)"
+tmp1->expression = "list(1.00e+00 9.886e+02 -9.98e+01)"
+tmp1->signal = nil
+tmp1->scriptFile = nil
+tmp1->type2 = nil
+tmp1->evalType = nil
+tmp1->displayIt = nil
+tmp1->internalName = nil
+tmp1->masterName = nil
+tmp1->masterScriptFile = nil
+tmp1->saveScriptFile = nil
+tmp1->saveMasterScriptFile = nil
+tmp1->isReferenced = nil
+tmp1->lastEvalTime = nil
+tmp1->origin = nil
+tmp1->sweepSet = nil
+tmp1->depList = nil
+tmp1->type = nil
+tmp1->areaTable = nil
+tmp1->selectionDetail = nil
+tmp1->value = nil
+tmp1->plot = nil
+tmp1->save = nil
+tmp1->march = nil
+tmp1->index = 6
+tmp1->timeStamp = nil
+tmp1->graphType = nil
+tmp1->yaxisLabel = nil
+tmp1->label = nil
+tmp1->yaxisUnit = nil
+tmp1->waveSpec = nil
+list(tmp1)
+)
+_outputList = nconc( _outputList savedComponent) 
+savedComponent = nil 
+_envSaveOptions = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38 tmp39)
+tmp1 = (let
+(tmp1 tmp2)
+tmp1 = 'keepRegPcellLabel
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp2 = (let
+(tmp1 tmp2)
+tmp1 = 'keepRegisteredPcell
+tmp2 = 't
+list(tmp1 tmp2)
+)
+tmp3 = (let
+(tmp1 tmp2)
+tmp1 = 'clearPcell
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp4 = (let
+(tmp1 tmp2)
+tmp1 = 'savePcellSelect
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp5 = (let
+(tmp1 tmp2)
+tmp1 = 'savePcell
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp6 = (let
+(tmp1 tmp2)
+tmp1 = 'subcktoppoint
+list(tmp1 tmp2)
+)
+tmp7 = (let
+(tmp1 tmp2)
+tmp1 = 'pcellFrame
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp8 = (let
+(tmp1 tmp2)
+tmp1 = 'subcktprobelvl
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp9 = (let
+(tmp1 tmp2)
+tmp1 = 'saveBySubcktInstances
+tmp2 = (let
+(tmp1)
+tmp1 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10)
+tmp1 = "<Click_here_to_add_an_Instance>"
+tmp2 = ""
+tmp3 = ""
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+tmp7 = ""
+tmp8 = ""
+tmp9 = "all"
+tmp10 = ""
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10)
+)
+list(tmp1)
+)
+list(tmp1 tmp2)
+)
+tmp10 = (let
+(tmp1 tmp2)
+tmp1 = 'saveBySubcktFrame
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp11 = (let
+(tmp1 tmp2)
+tmp1 = 'extremesInfo
+list(tmp1 tmp2)
+)
+tmp12 = (let
+(tmp1 tmp2)
+tmp1 = 'assertsInfo
+list(tmp1 tmp2)
+)
+tmp13 = (let
+(tmp1 tmp2)
+tmp1 = 'designParamValInfo
+tmp2 = 't
+list(tmp1 tmp2)
+)
+tmp14 = (let
+(tmp1 tmp2)
+tmp1 = 'subcktsInfo
+tmp2 = 't
+list(tmp1 tmp2)
+)
+tmp15 = (let
+(tmp1 tmp2)
+tmp1 = 'primitivesInfo
+tmp2 = 't
+list(tmp1 tmp2)
+)
+tmp16 = (let
+(tmp1 tmp2)
+tmp1 = 'outputParamInfo
+tmp2 = 't
+list(tmp1 tmp2)
+)
+tmp17 = (let
+(tmp1 tmp2)
+tmp1 = 'elementInfo
+tmp2 = 't
+list(tmp1 tmp2)
+)
+tmp18 = (let
+(tmp1 tmp2)
+tmp1 = 'modelParamInfo
+tmp2 = 't
+list(tmp1 tmp2)
+)
+tmp19 = (let
+(tmp1 tmp2)
+tmp1 = 'fastViewOption
+list(tmp1 tmp2)
+)
+tmp20 = (let
+(tmp1 tmp2)
+tmp1 = 'simOutputFormat
+tmp2 = "psf"
+list(tmp1 tmp2)
+)
+tmp21 = (let
+(tmp1 tmp2)
+tmp1 = 'outputFrame
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp22 = (let
+(tmp1 tmp2)
+tmp1 = 'captab_threshold
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp23 = (let
+(tmp1 tmp2)
+tmp1 = 'captab_sort
+tmp2 = "name"
+list(tmp1 tmp2)
+)
+tmp24 = (let
+(tmp1 tmp2)
+tmp1 = 'captab_detail
+tmp2 = "node"
+list(tmp1 tmp2)
+)
+tmp25 = (let
+(tmp1 tmp2)
+tmp1 = 'infoOptions
+tmp2 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
+tmp1 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "modelParameter"
+tmp2 = "models"
+tmp3 = "rawfile"
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+tmp7 = 't
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp2 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "element"
+tmp2 = "inst"
+tmp3 = "rawfile"
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+tmp7 = 't
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp3 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "outputParameter"
+tmp2 = "output"
+tmp3 = "rawfile"
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+tmp7 = 't
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp4 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "designParamVals"
+tmp2 = "parameters"
+tmp3 = "rawfile"
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+tmp7 = 't
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp5 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "primitives"
+tmp2 = "primitives"
+tmp3 = "rawfile"
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+tmp7 = 't
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp6 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "subckts"
+tmp2 = "subckts"
+tmp3 = "rawfile"
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+tmp7 = 't
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp7 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "asserts"
+tmp2 = "assert"
+tmp3 = "rawfile"
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp8 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "extremeinfo"
+tmp2 = "all"
+tmp3 = "logfile"
+tmp4 = ""
+tmp5 = "yes"
+tmp6 = ""
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+tmp9 = (let
+(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+tmp1 = "<Click_To_Add>"
+tmp2 = "none"
+tmp3 = "rawfile"
+tmp4 = ""
+tmp5 = ""
+tmp6 = ""
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9)
+)
+list(tmp1 tmp2)
+)
+tmp26 = (let
+(tmp1 tmp2)
+tmp1 = 'infoFrame
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp27 = (let
+(tmp1 tmp2)
+tmp1 = 'signalNames
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp28 = (let
+(tmp1 tmp2)
+tmp1 = 'timeWindow
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp29 = (let
+(tmp1 tmp2)
+tmp1 = 'timeWindLabel
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp30 = (let
+(tmp1 tmp2)
+tmp1 = 'enableTimeWindowSetup
+list(tmp1 tmp2)
+)
+tmp31 = (let
+(tmp1 tmp2)
+tmp1 = 'timewindFrame
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp32 = (let
+(tmp1 tmp2)
+tmp1 = 'saveahdlvars
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp33 = (let
+(tmp1 tmp2)
+tmp1 = 'probelvl
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp34 = (let
+(tmp1 tmp2)
+tmp1 = 'useprobes
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp35 = (let
+(tmp1 tmp2)
+tmp1 = 'currents
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp36 = (let
+(tmp1 tmp2)
+tmp1 = 'nestlvl
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp37 = (let
+(tmp1 tmp2)
+tmp1 = 'pwr
+tmp2 = ""
+list(tmp1 tmp2)
+)
+tmp38 = (let
+(tmp1 tmp2)
+tmp1 = 'save
+tmp2 = "allpub"
+list(tmp1 tmp2)
+)
+tmp39 = (let
+(tmp1 tmp2)
+tmp1 = 'saveFrame
+tmp2 = ""
+list(tmp1 tmp2)
+)
+list(tmp1 tmp2 tmp3 tmp4 tmp5 tmp6 tmp7 tmp8 tmp9 tmp10 tmp11 tmp12 tmp13 tmp14 tmp15 tmp16 tmp17 tmp18 tmp19 tmp20 tmp21 tmp22 tmp23 tmp24 tmp25 tmp26 tmp27 tmp28 tmp29 tmp30 tmp31 tmp32 tmp33 tmp34 tmp35 tmp36 tmp37 tmp38 tmp39)
+)
+savedComponent = list( _outputList _envSaveOptions ) 
+_outputList = 'unbound
+ _envSaveOptions = 'unbound

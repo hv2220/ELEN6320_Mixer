@@ -1,0 +1,27 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Sun Jun 27 17:01:47 2021 
+Best design point: 1
+Design specs: 
+	PSS	corner	Nominal - 
+	p(50. /vout+); pss dB10P		Error	No
+	Phase Noise; dBc/Hz, Relative Harmonic = 1		Error	No
+	HB	corner	Nominal - 
+	Phase Noise; dBc/Hz, Relative Harmonic = 1		Error	No
+Design parameters: 
+	numfin1		5
+	mult		8
+	VGS		700m
+	VG2		800m
+	VG1		600m
+	VDS		1.2
+	VB		800m
+	Ldrain		120p
+	Lbuffer		375p
+	Cc		15f
+
+Interactive.0
+Number of points completed: 1
+Number of simulation errors: 3
+Interactive.0 completed. 
+Current time: Sun Jun 27 17:02:31 2021 
