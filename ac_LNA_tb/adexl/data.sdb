@@ -17,17 +17,8 @@
 			<test enabled="1">Jopt
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>cell
-						<value>ac_LNA_tb</value>
-					</option>
-					<option>lib
-						<value>RAB_IPL90nm_Project</value>
-					</option>
 					<option>sim
 						<value>spectre</value>
-					</option>
-					<option>view
-						<value>schematic</value>
 					</option>
 					<option>path
 						<value>$AXL_SETUPDB_DIR/test_states</value>
@@ -61,12 +52,6 @@
 			<test enabled="1">Cascode_Ft
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>cell
-						<value>ac_LNA_tb</value>
-					</option>
-					<option>lib
-						<value>RAB_IPL90nm_Project</value>
-					</option>
 					<option>path
 						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
@@ -75,9 +60,6 @@
 					</option>
 					<option>state
 						<value>Cascode_Ft_active</value>
-					</option>
-					<option>view
-						<value>schematic</value>
 					</option>
 				</tooloptions>
 				<prerunscript>0</prerunscript>
@@ -106,12 +88,6 @@
 			<test enabled="1">Rsopt
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>cell
-						<value>ac_LNA_tb</value>
-					</option>
-					<option>lib
-						<value>RAB_IPL90nm_Project</value>
-					</option>
 					<option>path
 						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
@@ -120,9 +96,6 @@
 					</option>
 					<option>state
 						<value>Rsopt_active</value>
-					</option>
-					<option>view
-						<value>schematic</value>
 					</option>
 				</tooloptions>
 				<prerunscript>0</prerunscript>
@@ -151,12 +124,6 @@
 			<test enabled="1">Ls
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>cell
-						<value>ac_LNA_tb</value>
-					</option>
-					<option>lib
-						<value>RAB_IPL90nm_Project</value>
-					</option>
 					<option>path
 						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
@@ -165,9 +132,6 @@
 					</option>
 					<option>state
 						<value>Ls_active</value>
-					</option>
-					<option>view
-						<value>schematic</value>
 					</option>
 				</tooloptions>
 				<prerunscript>0</prerunscript>
@@ -196,12 +160,6 @@
 			<test enabled="1">Lg
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>cell
-						<value>ac_LNA_tb</value>
-					</option>
-					<option>lib
-						<value>RAB_IPL90nm_Project</value>
-					</option>
 					<option>path
 						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
@@ -210,9 +168,6 @@
 					</option>
 					<option>state
 						<value>Lg_active</value>
-					</option>
-					<option>view
-						<value>schematic</value>
 					</option>
 				</tooloptions>
 				<prerunscript>0</prerunscript>
@@ -241,12 +196,6 @@
 			<test enabled="1">Verification
 				<tool>ADE</tool>
 				<tooloptions>
-					<option>cell
-						<value>ac_LNA_tb</value>
-					</option>
-					<option>lib
-						<value>RAB_IPL90nm_Project</value>
-					</option>
 					<option>path
 						<value>$AXL_SETUPDB_DIR/test_states</value>
 					</option>
@@ -255,9 +204,6 @@
 					</option>
 					<option>state
 						<value>Verification_active</value>
-					</option>
-					<option>view
-						<value>schematic</value>
 					</option>
 				</tooloptions>
 				<prerunscript>0</prerunscript>
