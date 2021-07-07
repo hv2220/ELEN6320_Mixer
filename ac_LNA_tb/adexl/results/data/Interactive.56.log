@@ -1,0 +1,28 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Jul  5 01:00:48 2021 
+Best design point: 1
+Design specs: 
+	Verification	corner	Nominal - 
+	compressionCurves		Error	No
+	Input Referred 1dB Compression Point		Error	No
+Design parameters: 
+	fingers1		35
+	fingers2		35
+	LD1		110p
+	LD2		110p
+	LG		110p
+	LM1		1n
+	LM2		1n
+	LS1		45p
+	vbias		522m
+	VPWR		1.2
+	COUT1		150f
+	COUT2		65f
+	CMULT2		450m
+
+Interactive.56
+Number of points completed: 1
+Number of simulation errors: 2
+Interactive.56 completed. 
+Current time: Mon Jul  5 01:01:02 2021 
