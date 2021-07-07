@@ -1,0 +1,3 @@
+projectDir = '"~/simulation"
+designInfo = '("ELEN6320_Receiver" "VCO_Mixer_TB" "schematic" "spectre")
+descriptionText = "None"
