@@ -1,0 +1,21 @@
+EVcdFile ""
+EVcdInfoFile ""
+VcdFile ""
+VcdInfoFile ""
+VectorFile nil
+allDefinitionFiles nil
+allDspfFiles nil
+allEVcdFiles nil
+allIncludedPaths ((t "/proj/gpfs/qhc/columbia/wa/iplRefKit_v1_0_feb_23_10/refPDK/hspice"))
+allPspiceFiles nil
+allSpefFiles nil
+allStimulusFiles nil
+allVcdFiles nil
+allVectorFiles nil
+definitionFiles nil
+dspfFile nil
+hlcheck "off"
+includePath "/proj/gpfs/qhc/columbia/wa/iplRefKit_v1_0_feb_23_10/refPDK/hspice"
+pspiceFile nil
+spefFile nil
+stimulusFile nil

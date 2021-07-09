@@ -1,0 +1,35 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Mon Jul  5 00:53:08 2021 
+Best design point: 1
+Design specs: 
+	Jopt	corner	Nominal - 
+	Cascode_Ft	corner	Nominal - 
+	Rsopt	corner	Nominal - 
+	Ls	corner	Nominal - 
+	Lg	corner	Nominal - 
+	Ld1	corner	Nominal - 
+	Ld2	corner	Nominal - 
+	COUT1	corner	Nominal - 
+	CMULT2	corner	Nominal - 
+	Verification	corner	Nominal - 
+Design parameters: 
+	fingers1		35
+	fingers2		35
+	LD1		110p
+	LD2		110p
+	LG		110p
+	LM1		1n
+	LM2		1n
+	LS1		45p
+	vbias		522m
+	VPWR		1.2
+	COUT1		150f
+	COUT2		65f
+	CMULT2		450m
+
+Interactive.55
+Number of points completed: 1
+Number of simulation errors: 10
+Interactive.55 completed. 
+Current time: Mon Jul  5 00:54:11 2021 
