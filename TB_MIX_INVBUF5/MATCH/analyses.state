@@ -470,7 +470,7 @@ analysis(qpac fields arrayCoeffs) (nil choices nil value nil)
 analysis(qpac fields center) ""
 analysis(qpac fields clockmaxharm) "2"
 analysis(qpac fields dec) ""
-analysis(qpac fields enable) (t)
+analysis(qpac fields enable) (nil)
 analysis(qpac fields harmCoeffs) nil
 analysis(qpac fields harmListMem) nil
 analysis(qpac fields harmsAndFreqs) (nil choices nil value nil)
@@ -703,7 +703,7 @@ analysis(sp fields designVar) "LSer1"
 analysis(sp fields dev) ""
 analysis(sp fields deviceParam) ""
 analysis(sp fields donoise) "no"
-analysis(sp fields enable) (nil)
+analysis(sp fields enable) (t)
 analysis(sp fields freq) "60G"
 analysis(sp fields incrType) "Linear"
 analysis(sp fields iprobe) ""
@@ -716,7 +716,7 @@ analysis(sp fields modeSelection) "Single-Ended"
 analysis(sp fields modelParam) ""
 analysis(sp fields oprobe) ""
 analysis(sp fields param) ""
-analysis(sp fields ports) ("/PORT1" "/PORT0")
+analysis(sp fields ports) ("/PORT0" "/PORT1")
 analysis(sp fields rangeType) "Start-Stop"
 analysis(sp fields span) ""
 analysis(sp fields sprobes) nil
