@@ -1,0 +1,27 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Jul  8 21:31:24 2021 
+Best design point: 1
+Design specs: 
+	Verification	corner	Nominal - 
+	Input Referred 1dB Compression Point		-24.73
+	Power		14.15m
+	Verification_59_61	corner	Nominal - 
+	Input Referred 1dB Compression Point		-24.73
+	Power		14.15m
+Design parameters: 
+	LG		72.82p
+	LM		231.6p
+	LS1		113p
+	COUT1		50f
+	CSERIES		12f
+	CSHUNT		7.4f
+	LD1		109.7p
+	LD2		109.7p
+	prf		-40
+
+Interactive.181
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.181 completed. 
+Current time: Thu Jul  8 21:32:12 2021 

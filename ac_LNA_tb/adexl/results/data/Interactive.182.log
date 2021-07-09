@@ -1,0 +1,29 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Jul  8 21:41:11 2021 
+Best design point: 1
+Design specs: 
+	Verification	corner	Nominal - 
+	S22 dB20		-37.57	Yes
+	S11 dB20		-29.33	Yes
+	NF dB10		776.7m	Yes
+	S21 dB20		23.5	Yes
+	Input Referred 1dB Compression Point		-24.73	Yes
+	Power		14.15m
+	Verification_50_70	corner	Nominal - 
+Design parameters: 
+	LG		72.82p
+	LM		231.6p
+	LS1		113p
+	COUT1		50f
+	CSERIES		12f
+	CSHUNT		7.4f
+	LD1		109.7p
+	LD2		109.7p
+	prf		-40
+
+Interactive.182
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.182 completed. 
+Current time: Thu Jul  8 21:41:54 2021 
