@@ -1,0 +1,23 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Jul  8 18:16:20 2021 
+Best design point: 1
+Design specs: 
+	Verification	corner	Nominal - 
+	GA dB10		23.74
+Design parameters: 
+	LG		38.55p
+	LM		231.6p
+	LS1		102.8p
+	COUT1		50f
+	CSERIES		12f
+	CSHUNT		7.4f
+	LD1		109.7p
+	LD2		109.7p
+	prf		-40
+
+Interactive.174
+Number of points completed: 1
+Number of simulation errors: 0
+Interactive.174 completed. 
+Current time: Thu Jul  8 18:17:27 2021 
