@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="datasheetMainDoc.xsl"?>
+<ROOT dsAuthorName="Adam Chamberlain (CAD)" name="Interactive.182" parasiticsRunMode="None" dsCreationDateTime="8 Jul 2021 21:46:05" viewMode="adexl" dsUserName="qhc" fnameprefix="Interactive.182" enableCpkPerc="disEnable" runMode="Single Run, Sweeps and Corners">
+    <SETUPSUMMARY view="adexl" cell="ac_LNA_tb" lib="ELEN6320_Receiver"/>
+    <SCHDIAGRAMS exportPath="/proj/gpfs/qhc/columbia/wa/ELEN6320_Receiver_IFX/ac_LNA_tb/adexl/documents/Interactive.182/"/>
+    <CORNERS/>
+    <VARS>
+        <VAR name="LG">72.82p</VAR>
+        <VAR name="LM">231.6p</VAR>
+        <VAR name="LS1">113.0p</VAR>
+        <VAR name="COUT1">50f</VAR>
+        <VAR name="CSERIES">12f</VAR>
+        <VAR name="CSHUNT">7.4f</VAR>
+        <VAR name="LD1">109.7p</VAR>
+        <VAR name="LD2">109.7p</VAR>
+        <VAR name="prf">-40</VAR>
+    </VARS>
+    <MODELGROUPS/>
+    <TESTS>
+        <TEST view="schematic" state="Verification_Jopt:1_state_Interactive.182" cell="ac_LNA_tb" lib="ELEN6320_Receiver" simultor="spectre">Verification</TEST>
+        <TEST view="schematic" state="Verification_50_70_Verification:1_state_Interactive.182" cell="ac_LNA_tb" lib="ELEN6320_Receiver" simultor="spectre">Verification_50_70</TEST>
+    </TESTS>
+    <RESULTSSUMMARY>
+        <RSITEM max_status="pass" minVal="-37.57" specdesc="&lt; -15" expType="expr" resultName="S22 dB20" test="Verification" status="pass" min_status="pass" maxVal="-37.57" expName="(ymax (db (spm (quote sp) 2 2)))"/>
+        <RSITEM max_status="pass" minVal="-29.33" specdesc="&lt; -15" expType="expr" resultName="S11 dB20" test="Verification" status="pass" min_status="pass" maxVal="-29.33" expName="(ymax (db (spm (quote sp) 1 1)))"/>
+        <RSITEM max_status="pass" minVal="776.7m" specdesc="&lt; 6" expType="expr" resultName="NF dB10" test="Verification" status="pass" min_status="pass" maxVal="776.7m" expName="(ymax (db10 (getData &quot;F&quot; ?result &quot;sp_noise&quot;)))"/>
+        <RSITEM max_status="pass" minVal="23.5" specdesc="range 18 26" expType="expr" resultName="S21 dB20" test="Verification" status="pass" min_status="pass" maxVal="23.5" expName="(ymax (db (spm (quote sp) 2 1)))"/>
+        <RSITEM max_status="pass" minVal="-24.73" specdesc="> -30" expType="expr" resultName="Input Referred 1dB Compression Point" test="Verification" status="pass" min_status="pass" maxVal="-24.73" expName="(compressionVRI (difference (v &quot;/net3&quot; ?result &quot;hb_fd&quot;) 0.0) (quote 1) ?rport (resultParam &quot;PORT2:r&quot; ?result &quot;hb_fd&quot;) ?gcomp 1)"/>
+        <RSITEM max_status="pass" minVal="14.15m" specdesc="&lt; 24m" expType="expr" resultName="Power" test="Verification" status="pass" min_status="pass" maxVal="14.15m" expName="(times (pv &quot;VPWR&quot; &quot;pwr&quot; ?result &quot;dcOpInfo&quot;) -1)"/>
+        <RSITEM minVal="No Values" expType="expr" resultName="S22 dB20" test="Verification_50_70" maxVal="No Values" expName="(db (spm (quote sp) 2 2))"/>
+        <RSITEM minVal="No Values" expType="expr" resultName="S11 dB20" test="Verification_50_70" maxVal="No Values" expName="(db (spm (quote sp) 1 1))"/>
+        <RSITEM minVal="No Values" expType="expr" resultName="NF dB10" test="Verification_50_70" maxVal="No Values" expName="(db10 (getData &quot;F&quot; ?result &quot;sp_noise&quot;))"/>
+        <RSITEM minVal="No Values" expType="expr" resultName="S21 dB20" test="Verification_50_70" maxVal="No Values" expName="(db (spm (quote sp) 2 1))"/>
+    </RESULTSSUMMARY>
+    <TESTDOCS>
+        <TESTDOC testFileName="Verification" testName="Verification"/>
+        <TESTDOC testFileName="Verification_50_70" testName="Verification_50_70"/>
+    </TESTDOCS>
+</ROOT>

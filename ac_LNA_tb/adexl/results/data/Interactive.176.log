@@ -1,0 +1,27 @@
+Starting Single Run, Sweeps and Corners...
+
+Current time: Thu Jul  8 18:36:10 2021 
+Best design point: 1
+Design specs: 
+	Verification	corner	Nominal - 
+	GA dB10		23.74
+	Input-referred		Error	No
+	Voltage Curve		Error	No
+	Gain Curve		Error	No
+	Output-referred		Error	No
+Design parameters: 
+	LG		38.55p
+	LM		231.6p
+	LS1		102.8p
+	COUT1		50f
+	CSERIES		12f
+	CSHUNT		7.4f
+	LD1		109.7p
+	LD2		109.7p
+	prf		-40
+
+Interactive.176
+Number of points completed: 1
+Number of simulation errors: 4
+Interactive.176 completed. 
+Current time: Thu Jul  8 18:37:22 2021 

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="datasheetTestDoc.xsl"?>
+<ROOT dsAuthorName="Adam Chamberlain (CAD)" name="Verification_50_70" mainfnameprefix="Interactive.182" parasiticsRunMode="None" dsCreationDateTime="8 Jul 2021 21:46:09" dsUserName="qhc" enableCpkPerc="disEnable" runMode="Single Run, Sweeps and Corners">
+    <RESULTSSUMMARY>
+        <RSITEM minVal="No Values" expType="expr" resultName="S22 dB20" test="Verification_50_70" maxVal="No Values" expName="(db (spm (quote sp) 2 2))"/>
+        <RSITEM minVal="No Values" expType="expr" resultName="S11 dB20" test="Verification_50_70" maxVal="No Values" expName="(db (spm (quote sp) 1 1))"/>
+        <RSITEM minVal="No Values" expType="expr" resultName="NF dB10" test="Verification_50_70" maxVal="No Values" expName="(db10 (getData &quot;F&quot; ?result &quot;sp_noise&quot;))"/>
+        <RSITEM minVal="No Values" expType="expr" resultName="S21 dB20" test="Verification_50_70" maxVal="No Values" expName="(db (spm (quote sp) 2 1))"/>
+    </RESULTSSUMMARY>
+    <CORNERSPECS/>
+    <WAVEFORMS>
+        <WAVEFORM test="Verification_50_70" isWaveQuickPlot="false" fileName="dsImg_window_283.1.png"/>
+        <WAVEFORM test="Verification_50_70" isWaveQuickPlot="false" fileName="dsImg_window_283.2.png"/>
+        <WAVEFORM test="Verification_50_70" isWaveQuickPlot="false" fileName="dsImg_window_283.3.png"/>
+        <WAVEFORM test="Verification_50_70" isWaveQuickPlot="false" fileName="dsImg_window_283.4.png"/>
+    </WAVEFORMS>
+</ROOT>
